@@ -72,7 +72,7 @@ controller.hears(['attachment'], ['direct_message', 'direct_mention'], function 
   })
 })
 
-controller.hears(['what are the CCC standings?', 'standings'], ['mention', 'direct_message', 'direct_mention'], function (bot, message) {
+controller.hears('standings', ['mention', 'direct_message', 'direct_mention'], function (bot, message) {
   bot.reply(message, 'Andrew has 0 points. \n Angelica has 0 points. \n Austin has 0 points. \n Ray has 0 points.')
 })
 

@@ -73,7 +73,11 @@ controller.hears(['attachment'], ['direct_message', 'direct_mention'], function 
 })
 
 controller.hears('standings', ['mention', 'direct_message', 'direct_mention'], function (bot, message) {
-  bot.reply(message, 'Andrew has 0 points. \n Angelica has 0 points. \n Austin has 0 points. \n Ray has 0 points. \n Zach has -10000 points.')
+  bot.reply(message, 'Andrew has 0 points. \n Angelica has 0 points. \n Austin has 0 points. \n Ray has 0 points. \n Zach has -10000.')
+})
+
+controller.hears('bug', ['mention', 'direct_message', 'direct_mention'], function (bot, message) {
+  bot.reply(message, 'FIX IT!!!')
 })
 
 controller.hears('.*', ['direct_message', 'direct_mention'], function (bot, message) {
